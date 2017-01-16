@@ -56,6 +56,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         } else {
             proceedBtn.isHidden = true;
         }
+        let singleton: Singleton = Singleton.getInstance
+        singleton.receptor = items[row]
     }
     
     @IBAction func ConnectDevice(_ sender: AnyObject) {

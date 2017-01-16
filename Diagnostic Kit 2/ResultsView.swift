@@ -13,14 +13,16 @@ class ResultsView: UIViewController {
     @IBOutlet weak var warning: UIImageView!
     @IBOutlet weak var range: UILabel!
     @IBOutlet weak var details: UILabel!
-    var amount = 20
-    var receptor = ""
-    var threshold = 10
+    var amount : Int = 20
+    var receptor : String = ""
+    var threshold : Int = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let singleton: Singleton = Singleton.getInstance
+        receptor = singleton.receptor
         details.text = "Sample conatins \(amount) ppb \(receptor) antigen"
         range.text = "Acceptible range is 0-\(amount) ppb"
         if (amount <= threshold) {
