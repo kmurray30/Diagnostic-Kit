@@ -244,6 +244,20 @@
                                 <state key="normal" title="View Results">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="UIs-ZW-EBz" kind="show" id="iw6-DI-rWS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmN-B0-d65">
+                                <frame key="frameInset" minX="16" minY="20" width="69" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="mYm-GU-yH2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
@@ -255,11 +269,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdY-OD-CYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="139"/>
+            <point key="canvasLocation" x="1749.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Results View-->
+        <scene sceneID="y1U-3x-td0">
+            <objects>
+                <viewController id="UIs-ZW-EBz" customClass="ResultsView" customModule="Diagnostic_Kit_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qh9-L7-dlH"/>
+                        <viewControllerLayoutGuide type="bottom" id="mSK-wu-4wA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ocn-tw-wgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAC-6A-oPC">
+                                <frame key="frameInset" minX="16" minY="20" width="64" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="eog-jO-u43"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample contains antigen" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF5-FU-IdK">
+                                <frame key="frameInset" minX="16" minY="276" width="343" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acceptible range is 0-10 ppb" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hF-Vt-EhQ">
+                                <frame key="frameInset" minX="16" minY="409" width="343" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Warning" translatesAutoresizingMaskIntoConstraints="NO" id="Na2-It-TV5">
+                                <frame key="frameInset" minX="121" minY="102" width="133" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="details" destination="fF5-FU-IdK" id="zSV-gg-4z8"/>
+                        <outlet property="range" destination="4hF-Vt-EhQ" id="jSX-T5-fk7"/>
+                        <outlet property="warning" destination="Na2-It-TV5" id="Dlp-Fd-0lz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PNW-Bm-TNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2503.1999999999998" y="144.3778110944528"/>
         </scene>
     </scenes>
     <resources>
         <image name="Beaker" width="200" height="200"/>
         <image name="Test tubes" width="1979" height="1650"/>
+        <image name="Warning" width="600" height="550"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eog-jO-u43"/>
+    </inferredMetricsTieBreakers>
 </document>

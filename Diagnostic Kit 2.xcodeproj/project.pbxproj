@@ -16,6 +16,7 @@
 		00498BD11E2C541200A129B2 /* Diagnostic_Kit_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00498BD01E2C541200A129B2 /* Diagnostic_Kit_2UITests.swift */; };
 		00D977791E2C671D008BE33D /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D977781E2C671D008BE33D /* InstructionView.swift */; };
 		00D9777B1E2C6758008BE33D /* ProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D9777A1E2C6758008BE33D /* ProcessingView.swift */; };
+		00D9777D1E2C6E86008BE33D /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D9777C1E2C6E86008BE33D /* ResultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		00498BD21E2C541200A129B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D977781E2C671D008BE33D /* InstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		00D9777A1E2C6758008BE33D /* ProcessingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessingView.swift; sourceTree = "<group>"; };
+		00D9777C1E2C6E86008BE33D /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				00498BBC1E2C541200A129B2 /* Info.plist */,
 				00D977781E2C671D008BE33D /* InstructionView.swift */,
 				00D9777A1E2C6758008BE33D /* ProcessingView.swift */,
+				00D9777C1E2C6E86008BE33D /* ResultsView.swift */,
 			);
 			path = "Diagnostic Kit 2";
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				00498BB31E2C541200A129B2 /* ViewController.swift in Sources */,
 				00498BB11E2C541200A129B2 /* AppDelegate.swift in Sources */,
 				00D977791E2C671D008BE33D /* InstructionView.swift in Sources */,
+				00D9777D1E2C6E86008BE33D /* ResultsView.swift in Sources */,
 				00D9777B1E2C6758008BE33D /* ProcessingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
