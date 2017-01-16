@@ -225,7 +225,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSD-Ap-zSx">
                                 <frame key="frameInset" minY="629" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Finish"/>
+                                <state key="normal" title="Skip"/>
                                 <connections>
                                     <action selector="pressedFinish:" destination="lpQ-As-Va8" eventType="touchUpInside" id="WMF-aE-zAm"/>
                                 </connections>

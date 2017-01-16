@@ -12,6 +12,7 @@ class ProcessingView: UIViewController {
     
     @IBOutlet weak var viewResults: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
+    var gameTimer: Timer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,15 @@ class ProcessingView: UIViewController {
         // Do any additional setup after loading the view.
         viewResults.isHidden = true
         progressBar.progress = 0
+        gameTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+    }
+    
+    func runTimedCode() {
+        if (progressBar.progress < 0.99) {
+            progressBar.progress = progressBar.progress + 0.01;
+        } else {
+            viewResults.isHidden = false
+        }
     }
 
     override func didReceiveMemoryWarning() {
