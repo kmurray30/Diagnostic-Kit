@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Instruction View-->
         <scene sceneID="FJf-jW-mzB">
             <objects>
-                <viewController id="x8R-mm-OEk" sceneMemberID="viewController">
+                <viewController id="x8R-mm-OEk" customClass="InstructionView" customModule="Diagnostic_Kit_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MFz-cL-D7x"/>
                         <viewControllerLayoutGuide type="bottom" id="bPG-Fh-khs"/>
@@ -195,7 +195,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5wU-gg-KSZ" kind="show" id="UUJ-Cw-s0L"/>
+                                    <segue destination="lpQ-As-Va8" kind="show" id="NOv-Z6-VYd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -206,36 +206,39 @@
             </objects>
             <point key="canvasLocation" x="898" y="139"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="cVR-Vg-qa2">
+        <!--Processing View-->
+        <scene sceneID="9fV-F1-ORz">
             <objects>
-                <viewController id="5wU-gg-KSZ" sceneMemberID="viewController">
+                <viewController id="lpQ-As-Va8" customClass="ProcessingView" customModule="Diagnostic_Kit_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rMs-GA-2kX"/>
-                        <viewControllerLayoutGuide type="bottom" id="faH-Db-O0O"/>
+                        <viewControllerLayoutGuide type="top" id="PG3-aH-uCl"/>
+                        <viewControllerLayoutGuide type="bottom" id="gq1-ou-wnW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Tea-hq-tTG">
+                    <view key="view" contentMode="scaleToFill" id="vxZ-e7-kO5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vaw-F8-A4N">
+                                <frame key="frameInset" minX="9" minY="339" width="343" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSD-Ap-zSx">
+                                <frame key="frameInset" minY="629" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Finish"/>
+                                <connections>
+                                    <action selector="pressedFinish:" destination="lpQ-As-Va8" eventType="touchUpInside" id="WMF-aE-zAm"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait for sample to reach peak measurements. This usually takes about 5-10 minutes..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjD-Pw-uBl">
-                                <frame key="frameInset" minX="16" minY="215" width="343" height="139"/>
+                                <frame key="frameInset" minX="16" minY="192" width="343" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vaw-F8-A4N">
-                                <frame key="frameInset" minX="16" minY="362" width="343" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSD-Ap-zSx">
-                                <frame key="frameInset" minY="637" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Finish"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsi-ZQ-LVo">
-                                <frame key="frameInset" minX="113" minY="606" width="148" height="41"/>
+                                <frame key="frameInset" minX="106" minY="592" width="148" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                 <state key="normal" title="View Results">
@@ -245,10 +248,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="vaw-F8-A4N" id="HZM-1d-hEa"/>
+                        <outlet property="viewResults" destination="Xsi-ZQ-LVo" id="eqN-ct-2KP"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qhP-ud-0Nz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GdY-OD-CYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624.8" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1750" y="139"/>
         </scene>
     </scenes>
     <resources>
