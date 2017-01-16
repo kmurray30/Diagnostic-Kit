@@ -40,6 +40,16 @@ class ProcessingView: UIViewController {
         viewResults.isHidden = false
         progressBar.progress = 1
     }
+    
+    @IBAction func pressedPass(_ sender: AnyObject) {
+        let singleton: Singleton = Singleton.getInstance
+        singleton.result = 3
+    }
+    
+    @IBAction func pressedFail(_ sender: AnyObject) {
+        let singleton: Singleton = Singleton.getInstance
+        singleton.result = 20
+    }
 
     /*
     // MARK: - Navigation

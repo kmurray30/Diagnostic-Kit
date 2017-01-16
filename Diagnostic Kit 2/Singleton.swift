@@ -10,6 +10,7 @@ import Foundation
 
 class Singleton {
     var receptor : String = ""
+    var result : Int = 0
     
     //    fileprivate static var instance : Singleton? = nil
     //

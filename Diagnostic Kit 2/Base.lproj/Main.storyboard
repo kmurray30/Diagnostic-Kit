@@ -40,21 +40,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsn-xU-sTa">
-                                <frame key="frameInset" minX="126" minY="499" width="122" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
-                                <state key="normal" title="Begin Test">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="x8R-mm-OEk" kind="show" id="b44-W6-MWF"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Test tubes" translatesAutoresizingMaskIntoConstraints="NO" id="why-3p-xgj">
-                                <frame key="frameInset" minX="16" minY="544" width="343" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pp-k1-CTG">
                                 <frame key="frameInset" minY="637" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -117,6 +102,25 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test tubes bw" translatesAutoresizingMaskIntoConstraints="NO" id="H2m-bR-K9Q">
+                                <frame key="frameInset" minX="16" minY="556" width="172" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test tubes bw" translatesAutoresizingMaskIntoConstraints="NO" id="lEo-RM-CQG">
+                                <frame key="frameInset" minX="185" minY="556" width="172" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsn-xU-sTa">
+                                <frame key="frameInset" minX="126" minY="505" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <state key="normal" title="Begin Test">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x8R-mm-OEk" kind="show" id="b44-W6-MWF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -183,10 +187,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beaker" translatesAutoresizingMaskIntoConstraints="NO" id="NXs-aH-KCn">
-                                <frame key="frameInset" minX="202" minY="411" width="157" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FQ-xy-vh1">
                                 <frame key="frameInset" minX="113" minY="606" width="148" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -198,13 +198,17 @@
                                     <segue destination="lpQ-As-Va8" kind="show" id="NOv-Z6-VYd"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beaker" translatesAutoresizingMaskIntoConstraints="NO" id="NXs-aH-KCn">
+                                <frame key="frameInset" minX="188" minY="394" width="160" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gh6-v5-YLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="898" y="139"/>
+            <point key="canvasLocation" x="896.79999999999995" y="138.98050974512745"/>
         </scene>
         <!--Processing View-->
         <scene sceneID="9fV-F1-ORz">
@@ -259,6 +263,22 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="mYm-GU-yH2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbh-xF-oy8">
+                                <frame key="frameInset" minX="342" minY="612" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pass"/>
+                                <connections>
+                                    <action selector="pressedPass:" destination="lpQ-As-Va8" eventType="touchUpInside" id="0sN-2F-YRq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsI-cW-pLS">
+                                <frame key="frameInset" minX="343" minY="637" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fail"/>
+                                <connections>
+                                    <action selector="pressedFail:" destination="lpQ-As-Va8" eventType="touchUpInside" id="gcg-xv-Inh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -294,7 +314,7 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="eog-jO-u43"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample contains antigen" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF5-FU-IdK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample contains _ ppb _ antigen" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF5-FU-IdK">
                                 <frame key="frameInset" minX="16" minY="276" width="343" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -312,11 +332,16 @@
                                 <frame key="frameInset" minX="121" minY="102" width="133" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Heart check" translatesAutoresizingMaskIntoConstraints="NO" id="7X2-Ph-F8k">
+                                <frame key="frameInset" minX="121" minY="102" width="133" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="details" destination="fF5-FU-IdK" id="zSV-gg-4z8"/>
+                        <outlet property="heart" destination="7X2-Ph-F8k" id="PBI-yZ-A3a"/>
                         <outlet property="range" destination="4hF-Vt-EhQ" id="jSX-T5-fk7"/>
                         <outlet property="warning" destination="Na2-It-TV5" id="Dlp-Fd-0lz"/>
                     </connections>
@@ -328,10 +353,11 @@
     </scenes>
     <resources>
         <image name="Beaker" width="200" height="200"/>
-        <image name="Test tubes" width="1979" height="1650"/>
+        <image name="Heart check" width="512" height="512"/>
         <image name="Warning" width="600" height="550"/>
+        <image name="test tubes bw" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eog-jO-u43"/>
+        <segue reference="AgY-kx-P2g"/>
     </inferredMetricsTieBreakers>
 </document>

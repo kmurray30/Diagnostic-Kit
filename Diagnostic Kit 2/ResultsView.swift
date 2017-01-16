@@ -10,10 +10,11 @@ import UIKit
 
 class ResultsView: UIViewController {
 
+    @IBOutlet weak var heart: UIImageView!
     @IBOutlet weak var warning: UIImageView!
     @IBOutlet weak var range: UILabel!
     @IBOutlet weak var details: UILabel!
-    var amount : Int = 20
+    var amount : Int = 0
     var receptor : String = ""
     var threshold : Int = 10
     
@@ -23,10 +24,13 @@ class ResultsView: UIViewController {
         // Do any additional setup after loading the view.
         let singleton: Singleton = Singleton.getInstance
         receptor = singleton.receptor
+        amount = singleton.result
         details.text = "Sample conatins \(amount) ppb \(receptor) antigen"
-        range.text = "Acceptible range is 0-\(amount) ppb"
+        range.text = "Acceptible range is 0-\(threshold) ppb"
         if (amount <= threshold) {
             warning.isHidden = true
+        } else {
+            heart.isHidden = true
         }
     }
 
