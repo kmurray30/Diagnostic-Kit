@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00498BAC1E2C541200A129B2"
-               BuildableName = "Diagnostic Kit 2.app"
-               BlueprintName = "Diagnostic Kit 2"
-               ReferencedContainer = "container:Diagnostic Kit 2.xcodeproj">
+               BuildableName = "Sickify.app"
+               BlueprintName = "Sickify"
+               ReferencedContainer = "container:Sickify.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00498BC01E2C541200A129B2"
-               BuildableName = "Diagnostic Kit 2Tests.xctest"
-               BlueprintName = "Diagnostic Kit 2Tests"
-               ReferencedContainer = "container:Diagnostic Kit 2.xcodeproj">
+               BuildableName = "SickifyTests.xctest"
+               BlueprintName = "SickifyTests"
+               ReferencedContainer = "container:Sickify.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00498BCB1E2C541200A129B2"
-               BuildableName = "Diagnostic Kit 2UITests.xctest"
-               BlueprintName = "Diagnostic Kit 2UITests"
-               ReferencedContainer = "container:Diagnostic Kit 2.xcodeproj">
+               BuildableName = "SickifyUITests.xctest"
+               BlueprintName = "SickifyUITests"
+               ReferencedContainer = "container:Sickify.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "00498BAC1E2C541200A129B2"
-            BuildableName = "Diagnostic Kit 2.app"
-            BlueprintName = "Diagnostic Kit 2"
-            ReferencedContainer = "container:Diagnostic Kit 2.xcodeproj">
+            BuildableName = "Sickify.app"
+            BlueprintName = "Sickify"
+            ReferencedContainer = "container:Sickify.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "00498BAC1E2C541200A129B2"
-            BuildableName = "Diagnostic Kit 2.app"
-            BlueprintName = "Diagnostic Kit 2"
-            ReferencedContainer = "container:Diagnostic Kit 2.xcodeproj">
+            BuildableName = "Sickify.app"
+            BlueprintName = "Sickify"
+            ReferencedContainer = "container:Sickify.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "00498BAC1E2C541200A129B2"
-            BuildableName = "Diagnostic Kit 2.app"
-            BlueprintName = "Diagnostic Kit 2"
-            ReferencedContainer = "container:Diagnostic Kit 2.xcodeproj">
+            BuildableName = "Sickify.app"
+            BlueprintName = "Sickify"
+            ReferencedContainer = "container:Sickify.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

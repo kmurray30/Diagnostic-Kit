@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Diagnostic Kit 2.xcodeproj">
+      location = "self:/Users/kylemurray/Documents/Projects/Diagnostic Kit 2/Sickify.xcodeproj">
    </FileRef>
 </Workspace>

@@ -38,17 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00498BAD1E2C541200A129B2 /* Diagnostic Kit 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diagnostic Kit 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00498BAD1E2C541200A129B2 /* Sickify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sickify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00498BB01E2C541200A129B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00498BB21E2C541200A129B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00498BB51E2C541200A129B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00498BB71E2C541200A129B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00498BBA1E2C541200A129B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00498BBC1E2C541200A129B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00498BC11E2C541200A129B2 /* Diagnostic Kit 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diagnostic Kit 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00498BC11E2C541200A129B2 /* SickifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SickifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00498BC51E2C541200A129B2 /* Diagnostic_Kit_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnostic_Kit_2Tests.swift; sourceTree = "<group>"; };
 		00498BC71E2C541200A129B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00498BCC1E2C541200A129B2 /* Diagnostic Kit 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diagnostic Kit 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00498BCC1E2C541200A129B2 /* SickifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SickifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00498BD01E2C541200A129B2 /* Diagnostic_Kit_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnostic_Kit_2UITests.swift; sourceTree = "<group>"; };
 		00498BD21E2C541200A129B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D977781E2C671D008BE33D /* InstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
@@ -95,9 +95,9 @@
 		00498BAE1E2C541200A129B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00498BAD1E2C541200A129B2 /* Diagnostic Kit 2.app */,
-				00498BC11E2C541200A129B2 /* Diagnostic Kit 2Tests.xctest */,
-				00498BCC1E2C541200A129B2 /* Diagnostic Kit 2UITests.xctest */,
+				00498BAD1E2C541200A129B2 /* Sickify.app */,
+				00498BC11E2C541200A129B2 /* SickifyTests.xctest */,
+				00498BCC1E2C541200A129B2 /* SickifyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00498BAC1E2C541200A129B2 /* Diagnostic Kit 2 */ = {
+		00498BAC1E2C541200A129B2 /* Sickify */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00498BD51E2C541200A129B2 /* Build configuration list for PBXNativeTarget "Diagnostic Kit 2" */;
+			buildConfigurationList = 00498BD51E2C541200A129B2 /* Build configuration list for PBXNativeTarget "Sickify" */;
 			buildPhases = (
 				00498BA91E2C541200A129B2 /* Sources */,
 				00498BAA1E2C541200A129B2 /* Frameworks */,
@@ -152,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = "Diagnostic Kit 2";
+			name = Sickify;
 			productName = "Diagnostic Kit 2";
-			productReference = 00498BAD1E2C541200A129B2 /* Diagnostic Kit 2.app */;
+			productReference = 00498BAD1E2C541200A129B2 /* Sickify.app */;
 			productType = "com.apple.product-type.application";
 		};
-		00498BC01E2C541200A129B2 /* Diagnostic Kit 2Tests */ = {
+		00498BC01E2C541200A129B2 /* SickifyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00498BD81E2C541200A129B2 /* Build configuration list for PBXNativeTarget "Diagnostic Kit 2Tests" */;
+			buildConfigurationList = 00498BD81E2C541200A129B2 /* Build configuration list for PBXNativeTarget "SickifyTests" */;
 			buildPhases = (
 				00498BBD1E2C541200A129B2 /* Sources */,
 				00498BBE1E2C541200A129B2 /* Frameworks */,
@@ -170,14 +170,14 @@
 			dependencies = (
 				00498BC31E2C541200A129B2 /* PBXTargetDependency */,
 			);
-			name = "Diagnostic Kit 2Tests";
+			name = SickifyTests;
 			productName = "Diagnostic Kit 2Tests";
-			productReference = 00498BC11E2C541200A129B2 /* Diagnostic Kit 2Tests.xctest */;
+			productReference = 00498BC11E2C541200A129B2 /* SickifyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		00498BCB1E2C541200A129B2 /* Diagnostic Kit 2UITests */ = {
+		00498BCB1E2C541200A129B2 /* SickifyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00498BDB1E2C541200A129B2 /* Build configuration list for PBXNativeTarget "Diagnostic Kit 2UITests" */;
+			buildConfigurationList = 00498BDB1E2C541200A129B2 /* Build configuration list for PBXNativeTarget "SickifyUITests" */;
 			buildPhases = (
 				00498BC81E2C541200A129B2 /* Sources */,
 				00498BC91E2C541200A129B2 /* Frameworks */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				00498BCE1E2C541200A129B2 /* PBXTargetDependency */,
 			);
-			name = "Diagnostic Kit 2UITests";
+			name = SickifyUITests;
 			productName = "Diagnostic Kit 2UITests";
-			productReference = 00498BCC1E2C541200A129B2 /* Diagnostic Kit 2UITests.xctest */;
+			productReference = 00498BCC1E2C541200A129B2 /* SickifyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 00498BA81E2C541100A129B2 /* Build configuration list for PBXProject "Diagnostic Kit 2" */;
+			buildConfigurationList = 00498BA81E2C541100A129B2 /* Build configuration list for PBXProject "Sickify" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -235,9 +235,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00498BAC1E2C541200A129B2 /* Diagnostic Kit 2 */,
-				00498BC01E2C541200A129B2 /* Diagnostic Kit 2Tests */,
-				00498BCB1E2C541200A129B2 /* Diagnostic Kit 2UITests */,
+				00498BAC1E2C541200A129B2 /* Sickify */,
+				00498BC01E2C541200A129B2 /* SickifyTests */,
+				00498BCB1E2C541200A129B2 /* SickifyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,12 +304,12 @@
 /* Begin PBXTargetDependency section */
 		00498BC31E2C541200A129B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 00498BAC1E2C541200A129B2 /* Diagnostic Kit 2 */;
+			target = 00498BAC1E2C541200A129B2 /* Sickify */;
 			targetProxy = 00498BC21E2C541200A129B2 /* PBXContainerItemProxy */;
 		};
 		00498BCE1E2C541200A129B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 00498BAC1E2C541200A129B2 /* Diagnostic Kit 2 */;
+			target = 00498BAC1E2C541200A129B2 /* Sickify */;
 			targetProxy = 00498BCD1E2C541200A129B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -464,7 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kyle.Diagnostic-Kit-2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diagnostic Kit 2.app/Diagnostic Kit 2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sickify.app/Sickify";
 			};
 			name = Debug;
 		};
@@ -479,7 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kyle.Diagnostic-Kit-2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diagnostic Kit 2.app/Diagnostic Kit 2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sickify.app/Sickify";
 			};
 			name = Release;
 		};
@@ -514,7 +514,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00498BA81E2C541100A129B2 /* Build configuration list for PBXProject "Diagnostic Kit 2" */ = {
+		00498BA81E2C541100A129B2 /* Build configuration list for PBXProject "Sickify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00498BD31E2C541200A129B2 /* Debug */,
@@ -523,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00498BD51E2C541200A129B2 /* Build configuration list for PBXNativeTarget "Diagnostic Kit 2" */ = {
+		00498BD51E2C541200A129B2 /* Build configuration list for PBXNativeTarget "Sickify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00498BD61E2C541200A129B2 /* Debug */,
@@ -532,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00498BD81E2C541200A129B2 /* Build configuration list for PBXNativeTarget "Diagnostic Kit 2Tests" */ = {
+		00498BD81E2C541200A129B2 /* Build configuration list for PBXNativeTarget "SickifyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00498BD91E2C541200A129B2 /* Debug */,
@@ -541,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00498BDB1E2C541200A129B2 /* Build configuration list for PBXNativeTarget "Diagnostic Kit 2UITests" */ = {
+		00498BDB1E2C541200A129B2 /* Build configuration list for PBXNativeTarget "SickifyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00498BDC1E2C541200A129B2 /* Debug */,
