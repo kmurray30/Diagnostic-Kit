@@ -2,7 +2,7 @@
 //  Singelton.swift
 //  Camera Fun
 //
-//  Created by Kyle Murray on 1/5/17.
+//  Created by Kyle Murray on 1/5/17. 
 //  Copyright © 2016 Kyle Murray. All rights reserved.
 //
 
