@@ -16,7 +16,7 @@ class ProcessingView: UIViewController, AVAudioRecorderDelegate {
     
     // MP3 output vars
     var mp3Player:MP3Player?
-    var timer:Timer?
+    // var timer:Timer?
     
     // Mic input vars
     var recordingSession: AVAudioSession!
@@ -24,7 +24,7 @@ class ProcessingView: UIViewController, AVAudioRecorderDelegate {
     let sampleCount = 100;
     let singleton: Singleton = Singleton.getInstance
     
-     var threadTimer: Timer!
+    var pBarTimer: Timer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +54,7 @@ class ProcessingView: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         mp3Player = MP3Player()
-        mp3Player?.play()
+        //mp3Player?.play()
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateViewsWithTimer(_:)), userInfo: nil, repeats: false)
         
         // ask user for permission to record. Move to home screen when connected if possible
@@ -75,7 +75,7 @@ class ProcessingView: UIViewController, AVAudioRecorderDelegate {
         
         self.getSamples()
         for i in 0 ... self.sampleCount-1{
-            print(singleton.results[i])  // CURRENTLY I'M JUST PRINTING THE RESULTS. this should be 24 numbers printed to console
+            //print(singleton.results[i])  // CURRENTLY I'M JUST PRINTING THE RESULTS. this should be 24 numbers printed to console
         }
         
         // viewResults.isHidden = false
@@ -129,7 +129,7 @@ class ProcessingView: UIViewController, AVAudioRecorderDelegate {
         try! engine.start()
         //sleep(UInt32(Int(0.1*Double(sampleCount))))
         
-        threadTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+        pBarTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
         print("about to stop engine")
         print("engine stopped")
         self.singleton.currentIndex = 0

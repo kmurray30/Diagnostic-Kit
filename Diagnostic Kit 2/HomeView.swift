@@ -13,6 +13,7 @@ class HomeView: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, 
     
     var testSelected = false;
     var deviceConnected = false;
+    var timer:Timer?
     
     @IBOutlet weak var proceedBtn: UIButton!
     @IBOutlet weak var selectionLabel: UILabel!
@@ -27,7 +28,13 @@ class HomeView: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, 
         proceedBtn.isHidden = true
         selection1.isHidden = true
         selection2.isHidden = true
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+
         
+    }
+    
+    func runTimedCode() {
+        //handleRouteChange()
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
