@@ -43,23 +43,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pp-k1-CTG">
-                                <rect key="frame" x="0.0" y="637" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Connect Device"/>
-                                <connections>
-                                    <action selector="ConnectDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Zy-by-Q4d"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRy-4r-Vh1">
-                                <rect key="frame" x="225" y="637" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Disconnect Device"/>
-                                <connections>
-                                    <action selector="ConnectDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6l-pd-ksr"/>
-                                    <action selector="DisconnectDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dfn-IM-Lc7"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select test" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79z-jO-fh8">
                                 <rect key="frame" x="77" y="179" width="254" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -229,14 +212,6 @@
                                 <rect key="frame" x="9" y="339" width="343" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSD-Ap-zSx">
-                                <rect key="frame" x="0.0" y="629" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Skip"/>
-                                <connections>
-                                    <action selector="pressedFinish:" destination="lpQ-As-Va8" eventType="touchUpInside" id="WMF-aE-zAm"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsi-ZQ-LVo">
                                 <rect key="frame" x="106" y="592" width="148" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -260,22 +235,6 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="mYm-GU-yH2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbh-xF-oy8">
-                                <rect key="frame" x="342" y="612" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pass"/>
-                                <connections>
-                                    <action selector="pressedPass:" destination="lpQ-As-Va8" eventType="touchUpInside" id="0sN-2F-YRq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsI-cW-pLS">
-                                <rect key="frame" x="343" y="637" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Fail"/>
-                                <connections>
-                                    <action selector="pressedFail:" destination="lpQ-As-Va8" eventType="touchUpInside" id="gcg-xv-Inh"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait for sample data to be collected. This takes 10 seconds..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjD-Pw-uBl">
                                 <rect key="frame" x="37" y="192" width="336" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -287,6 +246,7 @@
                         <color key="backgroundColor" red="0.65098039215686276" green="0.78823529411764703" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="Dialog" destination="hjD-Pw-uBl" id="gg5-fZ-Lpa"/>
                         <outlet property="progressBar" destination="vaw-F8-A4N" id="HZM-1d-hEa"/>
                         <outlet property="viewResults" destination="Xsi-ZQ-LVo" id="eqN-ct-2KP"/>
                     </connections>

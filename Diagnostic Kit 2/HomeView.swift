@@ -21,6 +21,7 @@ class HomeView: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, 
     @IBOutlet weak var selection1: UIView!
     @IBOutlet weak var selection2: UIView!
     let items : [String] = [" ", "NOD1", "NOD2", "RIG-I"]
+    let currentRoute = AVAudioSession.sharedInstance().currentRoute
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +29,36 @@ class HomeView: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, 
         proceedBtn.isHidden = true
         selection1.isHidden = true
         selection2.isHidden = true
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
 
+        if currentRoute.outputs != nil {
+            for description in currentRoute.outputs {
+                if description.portType == AVAudioSessionPortHeadphones {
+                    headphonesConnected()
+                } else {
+                    headphonesDisconnected()
+                }
+            }
+        } else {
+            print("requires connection to device")
+        }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(audioRouteChangeListener), name: NSNotification.Name.AVAudioSessionRouteChange, object: nil)
+
     }
     
-    func runTimedCode() {
-        //handleRouteChange()
+    
+    
+    dynamic private func audioRouteChangeListener(notification:NSNotification) {
+        let audioRouteChangeReason = notification.userInfo![AVAudioSessionRouteChangeReasonKey] as! UInt
+        
+        switch audioRouteChangeReason {
+        case AVAudioSessionRouteChangeReason.newDeviceAvailable.rawValue:
+            headphonesConnected()
+        case AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue:
+            headphonesDisconnected()
+        default:
+            break
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -68,28 +92,6 @@ class HomeView: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, 
         singleton.receptor = items[row]
     }
     
-    @IBAction func ConnectDevice(_ sender: AnyObject) {
-        connectDeviceLabel.text = "Device connected"
-        deviceConnected = true
-        selection2.isHidden = false
-        if (deviceConnected && testSelected) {
-            proceedBtn.isHidden = false;
-        } else {
-            proceedBtn.isHidden = true;
-        }
-    }
-    
-    @IBAction func DisconnectDevice(_ sender: AnyObject) {
-        connectDeviceLabel.text = "Connect device"
-        deviceConnected = false;
-        selection2.isHidden = true
-        if (deviceConnected && testSelected) {
-            proceedBtn.isHidden = false;
-        } else {
-            proceedBtn.isHidden = true;
-        }
-    }
-    
     // Check if headphones plugged in
     func handleRouteChange(_ notification: Notification) {
         guard
@@ -120,6 +122,27 @@ class HomeView: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, 
         // Dispose of any resources that can be recreated.
     }
     
+    func headphonesConnected() {
+        connectDeviceLabel.text = "Device connected"
+        deviceConnected = true
+        selection2.isHidden = false
+        if (deviceConnected && testSelected) {
+            proceedBtn.isHidden = false;
+        } else {
+            proceedBtn.isHidden = true;
+        }
+    }
+    
+    func headphonesDisconnected() {
+        connectDeviceLabel.text = "Connect device"
+        deviceConnected = false;
+        selection2.isHidden = true
+        if (deviceConnected && testSelected) {
+            proceedBtn.isHidden = false;
+        } else {
+            proceedBtn.isHidden = true;
+        }
+    }
     
 }
 

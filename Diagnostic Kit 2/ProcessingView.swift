@@ -13,6 +13,7 @@ class ProcessingView: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet weak var viewResults: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var Dialog: UILabel!
     
     // MP3 output vars
     var mp3Player:MP3Player?
@@ -44,6 +45,7 @@ class ProcessingView: UIViewController, AVAudioRecorderDelegate {
             progressBar.progress = progressBar.progress + 0.01;
         } else {
             viewResults.isHidden = false
+            Dialog.text = "Finished collecting data"
         }
     }
 
@@ -54,7 +56,8 @@ class ProcessingView: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         mp3Player = MP3Player()
-        //mp3Player?.play()
+        // TODO Sid uncomment line below to test with sound
+        // mp3Player?.play()
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateViewsWithTimer(_:)), userInfo: nil, repeats: false)
         
         // ask user for permission to record. Move to home screen when connected if possible
