@@ -10,7 +10,9 @@ import Foundation
 
 class Singleton {
     var receptor : String = ""
-    var result : Int = 0
+    // var result : Int = 0
+    var results = [Float](repeating: 0, count:100)
+    var currentIndex = 0
     
     //    fileprivate static var instance : Singleton? = nil
     //

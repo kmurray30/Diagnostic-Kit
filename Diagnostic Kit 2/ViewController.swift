@@ -1,92 +1,36 @@
 //
 //  ViewController.swift
-//  Diagnostic Kit
+//  MP3Player
 //
-//  Created by Kyle Murray on 1/15/17.
-//  Copyright © 2017 Kyle Murray. All rights reserved.
+//  Created by James Tyner on 7/5/15.
+//  Copyright (c) 2015 James Tyner. All rights reserved.
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ViewController: UIViewController {
     
-    var testSelected = false;
-    var deviceConnected = false;
+    var mp3Player:MP3Player?
+    var timer:Timer?
     
-    @IBOutlet weak var proceedBtn: UIButton!
-    @IBOutlet weak var selectionLabel: UILabel!
-    @IBOutlet weak var connectDeviceLabel: UILabel!
-    @IBOutlet weak var selection1: UIView!
-    @IBOutlet weak var selection2: UIView!
-    let items : [String] = [" ", "NOD1", "NOD2", "RIG-I"]
+    @IBOutlet weak var trackName: UILabel!
+    @IBOutlet weak var trackTime: UILabel!
+    @IBOutlet weak var progressBar: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        proceedBtn.isHidden = true
-        selection1.isHidden = true
-        selection2.isHidden = true
-        
+        mp3Player = MP3Player()
     }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+    func updateViewsWithTimer(_ timer: Timer){
+        mp3Player?.stop()
     }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return items.count
+    @IBAction func playSong(_ sender: AnyObject) {
+        mp3Player?.play()
+        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.updateViewsWithTimer(_:)), userInfo: nil, repeats: false)
     }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return items[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if row > 0 {
-            selectionLabel.text = "You have selected \(items[row])"
-            testSelected = true
-            selection1.isHidden = false
-        } else {
-            selectionLabel.text = "Select test"
-            testSelected = false
-            selection1.isHidden = true
-        }
-        if (deviceConnected && testSelected) {
-            proceedBtn.isHidden = false;
-        } else {
-            proceedBtn.isHidden = true;
-        }
-        let singleton: Singleton = Singleton.getInstance
-        singleton.receptor = items[row]
-    }
-    
-    @IBAction func ConnectDevice(_ sender: AnyObject) {
-        connectDeviceLabel.text = "Device connected"
-        deviceConnected = true
-        selection2.isHidden = false
-        if (deviceConnected && testSelected) {
-            proceedBtn.isHidden = false;
-        } else {
-            proceedBtn.isHidden = true;
-        }
-    }
-    
-    @IBAction func DisconnectDevice(_ sender: AnyObject) {
-        connectDeviceLabel.text = "Connect device"
-        deviceConnected = false;
-        selection2.isHidden = true
-        if (deviceConnected && testSelected) {
-            proceedBtn.isHidden = false;
-        } else {
-            proceedBtn.isHidden = true;
-        }
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
-

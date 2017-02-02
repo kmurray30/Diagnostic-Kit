@@ -16,18 +16,27 @@ class ResultsView: UIViewController {
     @IBOutlet weak var details: UILabel!
     var amount : Int = 0
     var receptor : String = ""
-    var threshold : Int = 10
+    var threshold : Float = 1000
+    let singleton: Singleton = Singleton.getInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let singleton: Singleton = Singleton.getInstance
+        let frac = 6
+        let start = singleton.results.count * 1/frac
+        let end = singleton.results.count * (frac-1)/frac
+        
+        var total: Float = 0
+        for i in start...end {
+            total += singleton.results[i]
+        }
+        let result = total/Float(end-start+1)
+        
         receptor = singleton.receptor
-        amount = singleton.result
-        details.text = "Sample conatins \(amount) ppb \(receptor) antigen"
+        details.text = "Sample conatins \(result) ppb \(receptor) antigen"
         range.text = "Acceptible range is 0-\(threshold) ppb"
-        if (amount <= threshold) {
+        if (result <= threshold) {
             warning.isHidden = true
         } else {
             heart.isHidden = true

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00498BB11E2C541200A129B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00498BB01E2C541200A129B2 /* AppDelegate.swift */; };
-		00498BB31E2C541200A129B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00498BB21E2C541200A129B2 /* ViewController.swift */; };
+		00498BB31E2C541200A129B2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00498BB21E2C541200A129B2 /* HomeView.swift */; };
 		00498BB61E2C541200A129B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00498BB41E2C541200A129B2 /* Main.storyboard */; };
 		00498BB81E2C541200A129B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00498BB71E2C541200A129B2 /* Assets.xcassets */; };
 		00498BBB1E2C541200A129B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00498BB91E2C541200A129B2 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,9 @@
 		00D9777B1E2C6758008BE33D /* ProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D9777A1E2C6758008BE33D /* ProcessingView.swift */; };
 		00D9777D1E2C6E86008BE33D /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D9777C1E2C6E86008BE33D /* ResultsView.swift */; };
 		00D9777F1E2C73CC008BE33D /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D9777E1E2C73CC008BE33D /* Singleton.swift */; };
+		00E49C781E42568000CE2478 /* MP3Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E49C761E42568000CE2478 /* MP3Player.swift */; };
+		00E49C791E42568000CE2478 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E49C771E42568000CE2478 /* ViewController.swift */; };
+		00E49C7C1E42CB5100CE2478 /* 10 kHz Test Tone Pure Sine Wave 5min.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00E49C7B1E42CB5100CE2478 /* 10 kHz Test Tone Pure Sine Wave 5min.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 /* Begin PBXFileReference section */
 		00498BAD1E2C541200A129B2 /* Sickify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sickify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00498BB01E2C541200A129B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00498BB21E2C541200A129B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00498BB21E2C541200A129B2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		00498BB51E2C541200A129B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00498BB71E2C541200A129B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00498BBA1E2C541200A129B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		00D9777A1E2C6758008BE33D /* ProcessingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessingView.swift; sourceTree = "<group>"; };
 		00D9777C1E2C6E86008BE33D /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		00D9777E1E2C73CC008BE33D /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		00E49C761E42568000CE2478 /* MP3Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MP3Player.swift; sourceTree = "<group>"; };
+		00E49C771E42568000CE2478 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00E49C7B1E42CB5100CE2478 /* 10 kHz Test Tone Pure Sine Wave 5min.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 kHz Test Tone Pure Sine Wave 5min.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				00498BB01E2C541200A129B2 /* AppDelegate.swift */,
-				00498BB21E2C541200A129B2 /* ViewController.swift */,
+				00498BB21E2C541200A129B2 /* HomeView.swift */,
 				00498BB41E2C541200A129B2 /* Main.storyboard */,
 				00498BB71E2C541200A129B2 /* Assets.xcassets */,
 				00498BB91E2C541200A129B2 /* LaunchScreen.storyboard */,
@@ -115,6 +121,9 @@
 				00D9777A1E2C6758008BE33D /* ProcessingView.swift */,
 				00D9777C1E2C6E86008BE33D /* ResultsView.swift */,
 				00D9777E1E2C73CC008BE33D /* Singleton.swift */,
+				00E49C761E42568000CE2478 /* MP3Player.swift */,
+				00E49C771E42568000CE2478 /* ViewController.swift */,
+				00E49C7B1E42CB5100CE2478 /* 10 kHz Test Tone Pure Sine Wave 5min.mp3 */,
 			);
 			path = "Diagnostic Kit 2";
 			sourceTree = "<group>";
@@ -248,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00498BBB1E2C541200A129B2 /* LaunchScreen.storyboard in Resources */,
+				00E49C7C1E42CB5100CE2478 /* 10 kHz Test Tone Pure Sine Wave 5min.mp3 in Resources */,
 				00498BB81E2C541200A129B2 /* Assets.xcassets in Resources */,
 				00498BB61E2C541200A129B2 /* Main.storyboard in Resources */,
 			);
@@ -274,11 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00498BB31E2C541200A129B2 /* ViewController.swift in Sources */,
+				00E49C781E42568000CE2478 /* MP3Player.swift in Sources */,
+				00498BB31E2C541200A129B2 /* HomeView.swift in Sources */,
 				00D9777F1E2C73CC008BE33D /* Singleton.swift in Sources */,
 				00498BB11E2C541200A129B2 /* AppDelegate.swift in Sources */,
 				00D977791E2C671D008BE33D /* InstructionView.swift in Sources */,
 				00D9777D1E2C6E86008BE33D /* ResultsView.swift in Sources */,
+				00E49C791E42568000CE2478 /* ViewController.swift in Sources */,
 				00D9777B1E2C6758008BE33D /* ProcessingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BFLJNW32H6;
 				INFOPLIST_FILE = "Diagnostic Kit 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kyle.Diagnostic-Kit-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BFLJNW32H6;
 				INFOPLIST_FILE = "Diagnostic Kit 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kyle.Diagnostic-Kit-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
